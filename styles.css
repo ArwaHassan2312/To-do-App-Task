@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+}
+
+nav>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav img{
+    height: 80px;
+    width: 100px;
+    padding: 10px 20px;
+}
+
+nav h1{
+    font-size: 28px;
+    color: #333;
+    margin-inline-start: 10px;
+}
+
+nav button{
+    margin-inline-end: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+h2{
+    text-align: center;
+    margin-block: 20px 0;
+    font-size: 26px;
+    color: #333;
+}
+
+.login-container,.register-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container h2,.register-container h2{
+    margin: 20px 0;
+    font-size: 26px;
+    color: #333;
+}
+
+.loginForm,.registerForm{
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.error-message{
+    color: red;
+    margin-block-end: 10px;
+    font-size: 14px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-block-end: 25px;
+}
+
+.form-group label{
+    margin-block-end: 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+.form-group input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.loginForm button,.registerForm button{
+    padding: 10px;
+    margin-block-end: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.taskList{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap:30px;
+    padding: 20px;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5); 
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #f8f8f8;
+    margin: auto;
+    padding: 20px 30px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #333;
+    text-align: center;
+}
+
+.modal-content label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.modal-content input,
+.modal-content textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-actions button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.modal-actions button:hover {
+    background-color: #45a049;
+}
+
+.modal-actions #cancelTask {
+    background-color: #ccc;
+    color: #333;
+}
+
+.modal-actions #cancelTask:hover {
+    background-color: #bbb;
+}
